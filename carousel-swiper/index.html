@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Swiper Carousel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="_css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="_css/style.css">
+</head>
+<body>
+
+    <h1>Swiper Slider Demo - Effect Coverflow (240)</h1>
+    <p>Copy do video <a href="https://www.youtube.com/watch?v=kw1wnvWjgCw&t=386s" target="_blank">Responsive Touch Slider Using Html CSS & Swiper.js</a></p>
+    <p>Dados do projeto em <a href="https://swiperjs.com/demos/" target="_blank">Swiper Demos</a></p>
+
+
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem1.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem2.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem3.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem4.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem5.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem6.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem7.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="imgBx">
+                    <img src="_images/Imagem8.png">
+                </div>
+                <div class="details">
+                    <h3>
+                        Casa Dos Ipês<br>
+                        <span><a href="https://decostore.com.br/blog/projetos/casas/casa-moderna-em-sao-paulo-por-studiomk27-casa-dos-ipes/" target="_blank">Saiba mais</a></span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <script type="text/javascript" src="_js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        let swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows : true,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+            },
+        });
+    </script>
+</body>
+</html>
